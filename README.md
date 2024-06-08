@@ -1,5 +1,5 @@
 # primCookieBanner
-A simple cookie banner you can add to static HTML websites, which means you can add it to any website. Developed for primsite.net.
+A simple cookie banner you can add to static HTML websites, which means you can add it to any website. Developed for [primsite.net](https://primsite.net/).
 
 # Why?
 Because most of the cookie banners available online are either paid or don't let you fully customize them.
