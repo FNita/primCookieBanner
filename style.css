@@ -36,6 +36,8 @@
         pointer-events: none;
         transform: scale(0.9);
         transition: all 0.2s ease;
+        margin-left: -9999px;
+        margin-bottom: -9999px;
     }
 
     #consentContent p {
