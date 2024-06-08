@@ -1,0 +1,176 @@
+/*-- -------------------------------- -->
+<---        Cookie Consent Styles     -->
+<--- -------------------------------- -*/
+
+/* All display sizes */
+@media only screen and (min-width: 0rem) {
+    #cookiebanner {
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+    }
+
+    #cookiebanner .backdrop {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #consentBox {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 40rem;
+    }
+
+    #consentBox.hide {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.9);
+        transition: all 0.2s ease;
+    }
+
+    #consentContent p {
+        color: #000;
+        margin: 0 0 2rem;
+        white-space: normal;
+    }
+
+    #cookiebanner .checkbox-group {
+        display: block;
+        margin-top: 1rem;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    #cookiebanner .switch {
+        background: #f9fafb;
+        font-family: inherit;
+        font-size: 0.9rem;
+        border-bottom-width: 1px;
+        box-shadow: none;
+        border: 1px solid #c0c4c9;
+        color: #20242f;
+        padding: 0.65rem;
+        line-height: normal;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        transition: all .15s ease-out;
+        --icon-padding: 2rem;
+        --icon-background-offset: 0.65rem;
+        height: 1.5rem;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        background-position: 50%;
+        width: 2.2rem;
+        border-radius: 2rem;
+        position: relative;
+    }
+
+    #cookiebanner .switch:checked {
+        background: none;
+        background-position: 0 0;
+        background-color: #3b4ce2;
+        border-color: #3b4ce2;
+    }
+
+    #cookiebanner .switch:after {
+        background: #c0c4c9;
+        border-radius: 0.875rem;
+        height: 0.875rem;
+        left: 0.2rem;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 0.875rem;
+        content: "";
+        transition: all .2s ease-out;
+    }
+
+    #cookiebanner .switch:checked:after {
+        -webkit-transform: translateY(-50%) translateX(0.85rem);
+        transform: translateY(-50%) translateX(0.85rem);
+        background: #fff;
+    }
+
+    #cookiebanner .switch+label {
+        color: #374151;
+        font-size: 1rem;
+        white-space: normal;
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: 0.5rem;
+        font-weight: 400;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        max-width: calc(100% - 3rem);
+        line-height: normal;
+    }
+
+    #cookiebanner small {
+        display: block;
+        font-weight: 400;
+        opacity: .75;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+    }
+
+    #cookiebanner .switch:disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
+
+    #cookiebanner .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #consentButton {
+        padding: 0.8rem 2.5rem;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        background: #3b4ce2;
+        transition: all 0.3s ease;
+    }
+
+    #cookiebanner .buttons a {
+        color: #000;
+        transition: color 0.3s;
+    }
+
+    #cookiebanner .buttons a:hover {
+        color: #3b4ce2;
+    }
+}
+
+/* Desktop only */
+@media only screen and (min-width: 64rem) {
+    #cookiebanner {
+        padding: 2rem;
+    }
+
+    #consentBox {
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+}
